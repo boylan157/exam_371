@@ -22,16 +22,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.67% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -43,9 +43,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -103,31 +103,25 @@
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -165,8 +159,8 @@ export class Home extends React.Component{
     }
 &nbsp;
     componentDidMount(){
-        <span class="missing-if-branch" title="if path not taken" >I</span>if(this.props.user){
-<span class="cstat-no" title="statement not covered" >            this.props.fetchAndUpdateUserInfo()</span>
+        if(this.props.user){
+            this.props.fetchAndUpdateUserInfo()
         }
     }
 &nbsp;
@@ -187,20 +181,17 @@ export class Home extends React.Component{
                     &lt;/Link&gt;
 &nbsp;
                     {loggedIn ? (
-<span class="branch-0 cbranch-no" title="branch not covered" >                        &lt;div&gt;</span>
+                        &lt;div&gt;
                             &lt;Link to={"/lootboxGame"} className={"button"}&gt;
                                 Open Lootbox
                             &lt;/Link&gt;
                             &lt;Link to={"/collection"} className={"button"}&gt;
                                 Your collection
                             &lt;/Link&gt;
-                            &lt;div className="action"&gt;
-                                &lt;p&gt;Victories: {user.victories}&lt;/p&gt;
-                                &lt;p&gt;Defeats: {user.defeats}&lt;/p&gt;
-                            &lt;/div&gt;
                         &lt;/div&gt;
+&nbsp;
                     ) : (
-                        &lt;p&gt;You need to log-in to start playing!&lt;/p&gt;
+                        &lt;p&gt;You need to log-in to get lootboxes!&lt;/p&gt;
                     )}
                 &lt;/div&gt;
             &lt;/div&gt;
@@ -213,7 +204,7 @@ export class Home extends React.Component{
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Apr 29 2020 18:56:57 GMT+0200 (GMT+02:00)
+                at Wed Apr 29 2020 21:39:05 GMT+0200 (GMT+02:00)
             </div>
         </div>
         <script src="..\prettify.js"></script>

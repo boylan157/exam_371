@@ -3,7 +3,7 @@ const { mount } = require('enzyme');
 import {BrowserRouter} from 'react-router-dom';
 const {PokemonList} = require("../../src/client/pokemonList");
 import {asyncCheckCondition, overrideFetch} from "../mytest-utils";
-const app = require("../../src/server/app");
+const {app} = require("../../src/server/app");
 
 function checkIfPokemonListIsDisplayed(driver) {
 

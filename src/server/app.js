@@ -75,4 +75,4 @@ app.use((req, res, next) => {
     res.sendFile(path.resolve(__dirname, '..', '..', 'public', 'index.html'));
 });
 
-module.exports = app
+module.exports = {app};

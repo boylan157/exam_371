@@ -1,8 +1,12 @@
+body{
+    background-color: lightblue;
+}
 .container {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    background-color: lightblue;
 }
 
 .main-content{
@@ -16,7 +20,9 @@
     display: flex;
     padding: 1rem 4rem;
     flex-direction: row;
+    width: 40rem;
     justify-content: space-between;
+    background-color: lightsalmon;
 }
 .header-logo {
     font-family: "Times New Roman", Times, serif;

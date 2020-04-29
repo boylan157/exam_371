@@ -1,22 +1,22 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-class Login extends React.Component {
+export class Login extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       userId: "",
       password: "",
-      errorMsg: null
+      errorMsg: null,
     };
   }
 
-  onUserIdChange = event => {
+  onUserIdChange = (event) => {
     this.setState({ userId: event.target.value });
   };
 
-  onPasswordChange = event => {
+  onPasswordChange = (event) => {
     this.setState({ password: event.target.value });
   };
 
@@ -33,9 +33,9 @@ class Login extends React.Component {
       response = await fetch(url, {
         method: "post",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
     } catch (err) {
       this.setState({ errorMsg: "Failed to connect to server: " + err });
@@ -50,7 +50,7 @@ class Login extends React.Component {
     if (response.status !== 204) {
       this.setState({
         errorMsg:
-          "Error when connecting to server: status code " + response.status
+            "Error when connecting to server: status code " + response.status,
       });
       return;
     }
@@ -64,40 +64,42 @@ class Login extends React.Component {
     let error = <div></div>;
     if (this.state.errorMsg) {
       error = (
-        <div className="errorMsg">
-          <p>{this.state.errorMsg}</p>
-        </div>
+          <div className="errorMsg">
+            <p>{this.state.errorMsg}</p>
+          </div>
       );
     }
 
     return (
-      <div className="center">
-        <div>
-          <p>User Id:</p>
-          <input
-            type="text"
-            value={this.state.userId}
-            onChange={this.onUserIdChange}
-          />
-        </div>
-        <div>
-          <p>Password:</p>
-          <input
-            type="password"
-            value={this.state.password}
-            onChange={this.onPasswordChange}
-          />
-        </div>
+        <div className="center">
+          <div>
+            <p>User Id:</p>
+            <input
+                type="text"
+                value={this.state.userId}
+                onChange={this.onUserIdChange}
+                id="userIdInput"
+            />
+          </div>
+          <div>
+            <p>Password:</p>
+            <input
+                type="password"
+                value={this.state.password}
+                onChange={this.onPasswordChange}
+                id="passwordInput"
+            />
+          </div>
 
-        {error}
+          {error}
 
-        <button className="button" onClick={this.doLogIn}>
-          Log In
-        </button>
-        <Link className="button" tabIndex="0" to={"/signup"}>
-          Register
-        </Link>
-      </div>
+          <button className="button" onClick={this.doLogIn} id="loginBtn">
+            Log In
+          </button>
+          <Link className="button" to={"/signup"}>
+            Register
+          </Link>
+        </div>
     );
   }
 }

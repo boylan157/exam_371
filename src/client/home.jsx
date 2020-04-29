@@ -36,13 +36,10 @@ export class Home extends React.Component{
                             <Link to={"/collection"} className={"button"}>
                                 Your collection
                             </Link>
-                            <div className="action">
-                                <p>Victories: {user.victories}</p>
-                                <p>Defeats: {user.defeats}</p>
-                            </div>
                         </div>
+
                     ) : (
-                        <p>You need to log-in to start playing!</p>
+                        <p>You need to log-in to get lootboxes!</p>
                     )}
                 </div>
             </div>

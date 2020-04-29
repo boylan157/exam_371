@@ -5,7 +5,7 @@ import { Link, withRouter } from "react-router-dom";
     Just provide a header component for all pages, where we have a link to the
     home-page, and login/signup/logout buttons.
  */
-class HeaderBar extends React.Component {
+export class HeaderBar extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -38,7 +38,7 @@ class HeaderBar extends React.Component {
           Welcome {userId}
           !!!
         </p>
-        <button className="header-button" onClick={this.doLogout}>
+        <button className="header-button" onClick={this.doLogout} id="logoutBtnId">
           Logout
         </button>
       </React.Fragment>

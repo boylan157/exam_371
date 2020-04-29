@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../../src/server/app');
+const {app} = require('../../../src/server/app');
 const pokemon = require("../../../src/server/db/pokemon")
 
 
