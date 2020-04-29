@@ -8,6 +8,7 @@ import {LootboxGame} from "./lootboxGame";
 import Login from "./login";
 import SignUp from "./signup";
 import HeaderBar from "./headerbar";
+import {Collection} from "./collection";
 
 
 
@@ -127,6 +128,10 @@ class App extends React.Component {
                                                         fetchAndUpdateUserInfo={this.fetchAndUpdateUserInfo}/>}/>
                         <Route exact path="/"
                                render={props => <Home {...props}
+                                                      user={this.state.user}
+                                                      fetchAndUpdateUserInfo={this.fetchAndUpdateUserInfo}/>}/>
+                        <Route exact path="/collection"
+                               render={props => <Collection {...props}
                                                       user={this.state.user}
                                                       fetchAndUpdateUserInfo={this.fetchAndUpdateUserInfo}/>}/>
                         <Route component={this.notFound}/>

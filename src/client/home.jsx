@@ -18,11 +18,10 @@ export class Home extends React.Component{
 
         return(
             <div>
-                <h2>Pokemon Game</h2>
 
-                <p className={"welcome-text"}>
-                    Welcome to Pokemon Game
-                </p>
+                <h2 className={"welcome-text"}>
+                    Welcome
+                </h2>
 
                 <div className={"action"}>
                     <Link to={"/pokemon"} className={"button"}>
@@ -33,6 +32,9 @@ export class Home extends React.Component{
                         <div>
                             <Link to={"/lootboxGame"} className={"button"}>
                                 Open Lootbox
+                            </Link>
+                            <Link to={"/collection"} className={"button"}>
+                                Your collection
                             </Link>
                             <div className="action">
                                 <p>Victories: {user.victories}</p>
