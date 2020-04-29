@@ -4,7 +4,6 @@ const {getRandomPokemon} = require("../db/pokemon");
 const {deletePokemon} = require("../db/pokemon");
 const {getPokemon} = require("../db/pokemon");
 const {getAllPokemon} = require("../db/pokemon");
-const {createNewPokemon} = require("../db/pokemon");
 const {updatePokemon} = require("../db/pokemon");
 
 
@@ -35,16 +34,6 @@ router.delete("/pokemon/:id", (req, res) => {
         res.send(204);
 });
 
-router.post("/createpokemon", (req, res) =>{
-
-    const dto = req.body;
-
-    const id = createNewPokemon((dto.name, dto.type))
-
-    res.status(201);
-    res.header("location", "createpokemon/" + id)
-    res.send()
-});
 
 router.delete("/pokemon/:id", (req, res) =>{
 

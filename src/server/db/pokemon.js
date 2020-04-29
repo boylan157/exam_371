@@ -129,20 +129,6 @@ function getRandomPokemon(numberOfPokemon) {
 
 }
 
-function createNewPokemon(name, type){
-    let counter = 20
-    const id = counter;
-    counter++;
-
-    const pokemon = {
-        name: name,
-        type: type,
-        id: id
-    };
-    pokemon.push(pokemon);
-    return true;
-}
-
 
 
 function deletePokemon(id){
@@ -167,73 +153,7 @@ function updatePokemon(inputPokemon) {
    }
 
 
-module.exports = {pokemon, getRandomPokemon, deletePokemon, createNewPokemon, getPokemon, getAllPokemon, updatePokemon}
-
-
-/*
-
-const pokemonMap = new Map();
-
-let counter = 0;
-
-function initPokemon(){
-    pokemonMap.clear();
-    counter = 0;
-
-    createNewPokemon("Charizard", "Fire");
-    createNewPokemon("Charmander", "Fire");
-    createNewPokemon("Charmeleon", "Fire");
-    createNewPokemon("Mew", "Psychic");
-    createNewPokemon("Ditto", "Unknown");
-}
-
-
-function createNewPokemon(name, type){
-
-    const id = "" + counter;
-    counter++;
-
-    const pokemon = {
-        id: id,
-        name: name,
-        type: type
-    }
-
-    pokemonMap.set(id, pokemon);
-
-    return id;
-}
-
-function deletePokemon(id){
-    return pokemonMap.delete(id);
-}
-
-function getPokemon(id) {
-    return pokemonMap.get(id);
-}
-
-function getAllPokemon(){
-    return Array.from(pokemonMap.values())
-}
-
-function updatePokemon(pokemon) {
-    if(!pokemon.has(pokemon.id)){
-        return false;
-    }
-
-    pokemon.set(pokemon.id, pokemon)
-    return true
-}
-
-module.exports = {initPokemon, getAllPokemon, createNewPokemon, getPokemon, updatePokemon, deletePokemon};
-
-
-
-
-
-*/
-
-
+module.exports = {pokemon, getRandomPokemon, deletePokemon, getPokemon, getAllPokemon, updatePokemon}
 
 
 

@@ -26,7 +26,6 @@ test("retrieve every single pokemon", async () => {
         const pokemon = res.body;
 
         expect(pokemon.name).toBe(pokemons[i].name)
-        console.log(pokemon.name + "" + pokemons[i].name)
     }
 });
 
