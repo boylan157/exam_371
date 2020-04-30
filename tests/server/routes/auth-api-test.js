@@ -2,6 +2,8 @@ const request = require('supertest');
 const {app} = require('../../../src/server/app');
 
 
+//Code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/tests/server/routes/auth-api-test.js
+
 let counter = 0;
 
 

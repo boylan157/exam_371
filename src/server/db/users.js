@@ -1,10 +1,5 @@
 
-/*
-    Here we "simulate" a database with in-memory Map.
-    Furthermore, we do not deal with the "proper" handling of
-    passwords. Passwords should NEVER be saved in plain text,
-    but rather hashed with secure algorithms like BCrypt.
- */
+// code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/src/server/db/users.js
 
 const users = new Map();
 

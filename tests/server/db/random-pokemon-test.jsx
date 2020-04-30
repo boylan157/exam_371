@@ -1,4 +1,4 @@
-const {getRandomPokemon} = require("../../../src/server/db/pokemon");
+const {getRandomPokemon} = require("../../../src/server/db/pokemonList");
 
 
 test("Test invalid n", () =>{

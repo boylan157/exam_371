@@ -78,12 +78,12 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {pokemon} from "./pokemon";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {pokemonList} from "./pokemonList";
 &nbsp;
 export function <span class="fstat-no" title="function not covered" >displayPokemon(</span>) {
-    let html = <span class="cstat-no" title="statement not covered" >"&lt;p class='pokemon-name'&gt;" + pokemon[0].name + "&lt;/p&gt;";</span>
+    let html = <span class="cstat-no" title="statement not covered" >"&lt;p class='pokemonList-name'&gt;" + pokemonList[0].name + "&lt;/p&gt;";</span>
 <span class="cstat-no" title="statement not covered" >    for(let i=<span class="cstat-no" title="statement not covered" >1;</span> i &lt; 20; i++){</span>
-<span class="cstat-no" title="statement not covered" >        html += "&lt;p class='pokemon-name'&gt;" + pokemon[i].name + "&lt;/p&gt;";</span>
+<span class="cstat-no" title="statement not covered" >        html += "&lt;p class='pokemonList-name'&gt;" + pokemonList[i].name + "&lt;/p&gt;";</span>
     }
 &nbsp;
     const pokemonDiv = <span class="cstat-no" title="statement not covered" >document.getElementById("pokemonDivId");</span>

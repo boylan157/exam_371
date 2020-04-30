@@ -7,11 +7,12 @@ const path = require('path');
 
 const Users = require('./db/users');
 const authApi = require('./routes/auth-api');
-const pokemonApi = require('./routes/pokemon-api');
+const pokemonApi = require('./routes/pokemon-list-api');
+const collectionApi = require('./routes/pokemon-collection-api')
 
 const app = express();
 
-
+// code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-08/src/server/app.js
 
 // to handle JSON payloads
 app.use(bodyParser.json());
@@ -67,6 +68,7 @@ app.use(passport.session());
 // Routes
 app.use('/api', authApi);
 app.use('/api', pokemonApi);
+app.use('/api', collectionApi);
 
 
 app.use(express.static('public'));

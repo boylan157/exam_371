@@ -9,7 +9,7 @@ const {app} = require('../../src/server/app');
 const {SignUp} = require('../../src/client/signup');
 const {resetAllUsers, getUser, createUser} = require('../../src/server/db/users');
 
-
+// Code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/tests/client/signup-test.jsx
 beforeEach(resetAllUsers);
 
 

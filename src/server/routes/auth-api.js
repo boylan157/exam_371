@@ -4,7 +4,7 @@ const passport = require('passport');
 const Users = require('../db/users');
 
 const router = express.Router();
-
+ // Code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/tests/server/routes/auth-api-test.js
 router.post('/login', passport.authenticate('local'), (req, res) => {
 
     res.status(204).send();

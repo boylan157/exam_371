@@ -1,5 +1,5 @@
 
-   const pokemon = [
+   const pokemonList = [
     {
         name: "Bulbasaur",
         type: "Grass",
@@ -108,7 +108,7 @@ function getRandomPokemon(numberOfPokemon) {
         throw "Invalid number of requested quizzes: " + numberOfPokemon;
     }
 
-    if(numberOfPokemon > pokemon.length){
+    if(numberOfPokemon > pokemonList.length){
         throw "Too many quizzes";
     }
 
@@ -116,7 +116,7 @@ function getRandomPokemon(numberOfPokemon) {
     let i = 0;
 
     while (i < numberOfPokemon){
-        const k = Math.floor(pokemon.length * Math.random());
+        const k = Math.floor(pokemonList.length * Math.random());
         if(selection.includes(k)){
             continue;
         }
@@ -125,35 +125,35 @@ function getRandomPokemon(numberOfPokemon) {
         i++;
     }
 
-    return Array.from(selection).map(e => pokemon[e]);
+    return Array.from(selection).map(e => pokemonList[e]);
 
 }
 
 
 
 function deletePokemon(id){
-    return pokemon.splice(id, 1);
+    return pokemonList.splice(id, 1);
 }
 
 function getPokemon(inputId){
-    return pokemon[inputId]
+    return pokemonList[inputId]
 }
 
 function getAllPokemon(){
-    return Array.from(pokemon.values());
+    return Array.from(pokemonList.values());
 }
 
 function updatePokemon(inputPokemon) {
-    if(!pokemon.includes(inputPokemon.id)){
+    if(!pokemonList.includes(inputPokemon.id)){
         return false;
     }
-    pokemon.name = inputPokemon.name;
-    pokemon.type = inputPokemon.type;
+    pokemonList.name = inputPokemon.name;
+    pokemonList.type = inputPokemon.type;
 
    }
 
 
-module.exports = {pokemon, getRandomPokemon, deletePokemon, getPokemon, getAllPokemon, updatePokemon}
+module.exports = {pokemon: pokemonList, getRandomPokemon, deletePokemon, getPokemon, getAllPokemon, updatePokemon}
 
 
 

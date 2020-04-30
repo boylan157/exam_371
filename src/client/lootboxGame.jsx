@@ -54,8 +54,6 @@ export class LootboxGame extends React.Component{
 
 
 
-
-
     render() {
         if(this.state.error){
             return <h2>{this.state.error}</h2>;
@@ -79,7 +77,7 @@ export class LootboxGame extends React.Component{
 
        <div>
            <div className={"action"}>
-               <Link to={"/"} className={"menu"}>
+               <Link to={"/"}>
                    Home
                </Link>
            </div>
@@ -87,6 +85,9 @@ export class LootboxGame extends React.Component{
            <p className={"pokemon-name"}>{pokemon[0].name}</p>
            <div className={"pokemon-type"}>Type: {pokemon[0].type}</div>
            <button onClick={this.showRandomPokemon}>Reroll</button>
+           <Link to={"/collection"}>
+               Add to collection
+           </Link>
        </div>
 
 

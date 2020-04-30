@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for server/db/pokemon.js</title>
+    <title>Code coverage report for server/db/pokemonList.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -18,7 +18,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="..\..\index.html">All files</a> / <a href="index.html">server/db</a> pokemon.js</h1>
+        <h1><a href="..\..\index.html">All files</a> / <a href="index.html">server/db</a> pokemonList.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -379,7 +379,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-   const pokemon = [
+   const pokemonList = [
     {
         name: "Bulbasaur",
         type: "Grass",
@@ -488,7 +488,7 @@ function getRandomPokemon(numberOfPokemon) {
         throw "Invalid number of requested quizzes: " + numberOfPokemon;
     }
 &nbsp;
-    if(numberOfPokemon &gt; pokemon.length){
+    if(numberOfPokemon &gt; pokemonList.length){
         throw "Too many quizzes";
     }
 &nbsp;
@@ -496,7 +496,7 @@ function getRandomPokemon(numberOfPokemon) {
     let i = 0;
 &nbsp;
     while (i &lt; numberOfPokemon){
-        const k = Math.floor(pokemon.length * Math.random());
+        const k = Math.floor(pokemonList.length * Math.random());
         if(selection.includes(k)){
             continue;
         }
@@ -505,35 +505,35 @@ function getRandomPokemon(numberOfPokemon) {
         i++;
     }
 &nbsp;
-    return Array.from(selection).map(e =&gt; pokemon[e]);
+    return Array.from(selection).map(e =&gt; pokemonList[e]);
 &nbsp;
 }
 &nbsp;
 &nbsp;
 &nbsp;
 function deletePokemon(id){
-    return pokemon.splice(id, 1);
+    return pokemonList.splice(id, 1);
 }
 &nbsp;
 function getPokemon(inputId){
-    return pokemon[inputId]
+    return pokemonList[inputId]
 }
 &nbsp;
 function getAllPokemon(){
-    return Array.from(pokemon.values());
+    return Array.from(pokemonList.values());
 }
 &nbsp;
 function <span class="fstat-no" title="function not covered" >updatePokemon(</span>inputPokemon) {
-<span class="cstat-no" title="statement not covered" >    if(!pokemon.includes(inputPokemon.id)){</span>
+<span class="cstat-no" title="statement not covered" >    if(!pokemonList.includes(inputPokemon.id)){</span>
 <span class="cstat-no" title="statement not covered" >        return false;</span>
     }
-<span class="cstat-no" title="statement not covered" >    pokemon.name = inputPokemon.name;</span>
-<span class="cstat-no" title="statement not covered" >    pokemon.type = inputPokemon.type;</span>
+<span class="cstat-no" title="statement not covered" >    pokemonList.name = inputPokemon.name;</span>
+<span class="cstat-no" title="statement not covered" >    pokemonList.type = inputPokemon.type;</span>
 &nbsp;
    }
 &nbsp;
 &nbsp;
-module.exports = {pokemon, getRandomPokemon, deletePokemon, getPokemon, getAllPokemon, updatePokemon}
+module.exports = {pokemonList, getRandomPokemon, deletePokemon, getPokemon, getAllPokemon, updatePokemon}
 &nbsp;
 &nbsp;
 &nbsp;

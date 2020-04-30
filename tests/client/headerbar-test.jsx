@@ -8,6 +8,8 @@ const {app} = require('../../src/server/app');
 
 const notLoggedInMsg = "You are not logged in";
 
+// code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/tests/client/headerbar-test.jsx
+
 test("Test not logged in", async () => {
 
     const userId = null;

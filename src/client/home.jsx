@@ -24,7 +24,7 @@ export class Home extends React.Component{
                 </h2>
 
                 <div className={"action"}>
-                    <Link to={"/pokemon"} className={"button"}>
+                    <Link to={"/pokemonList"} className={"button"}>
                         See list of all Pokemon
                     </Link>
 

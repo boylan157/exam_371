@@ -1,10 +1,10 @@
 const express = require('express');
-const {pokemon} = require("../db/pokemon");
-const {getRandomPokemon} = require("../db/pokemon");
-const {deletePokemon} = require("../db/pokemon");
-const {getPokemon} = require("../db/pokemon");
-const {getAllPokemon} = require("../db/pokemon");
-const {updatePokemon} = require("../db/pokemon");
+const {pokemon} = require("../db/pokemonList");
+const {getRandomPokemon} = require("../db/pokemonList");
+const {deletePokemon} = require("../db/pokemonList");
+const {getPokemon} = require("../db/pokemonList");
+const {getAllPokemon} = require("../db/pokemonList");
+const {updatePokemon} = require("../db/pokemonList");
 
 
 const router = express.Router();

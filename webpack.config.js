@@ -1,5 +1,6 @@
 const path = require('path');
 
+// code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-09/webpack.config.js
 module.exports = {
     entry: './src/client/index.jsx',
     output: {

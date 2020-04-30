@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="030905e4-1c1f-4a1a-860e-a3af61485c98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/client/headerbar-test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/client/login-test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/client/signup-test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/clover.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage-final.json" afterDir="false" />
@@ -18,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/client/pokemonList.jsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/client/pokemonList.jsx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/client/signup.jsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/client/signup.jsx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/pokemons.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/pokemons.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/server/app.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/server/app.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/server/db/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/server/db/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/server/db/pokemon.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/server/db/pokemon.js.html" afterDir="false" />
@@ -28,18 +27,33 @@
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/server/routes/pokemon-api.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/server/routes/pokemon-api.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/server/server.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/server/server.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/collection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/collection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/headerbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/headerbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/lootboxGame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/lootboxGame.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/signup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/pokemon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/pokemonList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/routes/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes/auth-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/routes/pokemon-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes/pokemon-list-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/client/headerbar-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/client/headerbar-test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/client/home-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/client/home-test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/client/pokemonList-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/client/pokemonList-test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/client/login-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/client/login-test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/client/signup-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/client/signup-test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jest-setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jest-setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/mytest-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mytest-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/server/db/random-pokemon-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/server/db/random-pokemon-test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/server/routes/auth-api-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/server/routes/auth-api-test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/server/routes/pokemon-api-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/server/routes/pokemon-api-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/winpty.exe.stackdump" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +93,20 @@
       <recent name="C:\Users\Daniel\WebstormProjects\exam_371\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Test not logged in">
+  <component name="RunManager" selected="Jest.Test logged in">
+    <configuration name="Test create pokemon" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/server/routes/collection-api-test.js" />
+      <test-names>
+        <test-name value="Test create pokemon" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Test logged in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -93,56 +120,49 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Test not logged in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Test retrieve each single pokemon" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/client/home-test.jsx" />
+      <test-file value="$PROJECT_DIR$/tests/server/routes/collection-api-test.js" />
       <test-names>
-        <test-name value="Test not logged in" />
+        <test-name value="Test retrieve each single pokemon" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="auth-api-test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Update pokemon" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/tests/server/routes/auth-api-test.js" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/server/routes/collection-api-test.js" />
+      <test-names>
+        <test-name value="Update pokemon" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="pokemon-api-test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="collection-api-test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/tests/server/routes/pokemon-api-test.js" />
-      <method v="2" />
-    </configuration>
-    <configuration name="random-pokemon-test.jsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/tests/server/db/random-pokemon-test.jsx" />
+      <test-file value="$PROJECT_DIR$/tests/server/routes/collection-api-test.js" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Test not logged in" />
         <item itemvalue="Jest.Test logged in" />
-        <item itemvalue="Jest.auth-api-test.js" />
-        <item itemvalue="Jest.random-pokemon-test.jsx" />
-        <item itemvalue="Jest.pokemon-api-test.js" />
+        <item itemvalue="Jest.collection-api-test.js" />
+        <item itemvalue="Jest.Update pokemon" />
+        <item itemvalue="Jest.Test retrieve each single pokemon" />
+        <item itemvalue="Jest.Test create pokemon" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +178,7 @@
       <updated>1588063070269</updated>
       <workItem from="1588063071414" duration="40665000" />
       <workItem from="1588113948604" duration="1742000" />
-      <workItem from="1588157115821" duration="28470000" />
+      <workItem from="1588157115821" duration="46139000" />
     </task>
     <task id="LOCAL−00001" summary="first commit">
       <created>1588171819925</created>
@@ -184,7 +204,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1588179760072</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="fixed tests that were failing">
+      <created>1588189245531</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1588189245531</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +219,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="fixed log in function" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed log in function" />
+    <MESSAGE value="fixed tests that were failing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed tests that were failing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Inspections" timestamp="1588167558852">
@@ -204,18 +231,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588161684194" />
-    <state x="709" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588082540958">
+    <state x="709" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588189542288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="709" y="324" key="#com.intellij.fileTypes.FileTypeChooser/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588082540958" />
+    <state x="709" y="324" key="#com.intellij.fileTypes.FileTypeChooser/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189542288" />
     <state x="671" y="202" key="#login-test.jsx" timestamp="1588180261471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="671" y="202" key="#login-test.jsx/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588180261471" />
-    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1588179751742">
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1588189241524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="115" key="CommitChangelistDialog2/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588179751742" />
+    <state x="585" y="115" key="CommitChangelistDialog2/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189241524" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1588188215571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -228,22 +255,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="471" y="226" key="Github.UntrackedFilesDialog/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588171741896" />
-    <state width="1899" height="289" key="GridCell.Tab.0.bottom" timestamp="1588189132553">
+    <state width="1899" height="289" key="GridCell.Tab.0.bottom" timestamp="1588202956245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.bottom/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189132553" />
-    <state width="1899" height="289" key="GridCell.Tab.0.center" timestamp="1588189132553">
+    <state width="1899" height="289" key="GridCell.Tab.0.bottom/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588202956245" />
+    <state width="1899" height="289" key="GridCell.Tab.0.center" timestamp="1588202956245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.center/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189132553" />
-    <state width="1899" height="289" key="GridCell.Tab.0.left" timestamp="1588189132553">
+    <state width="1899" height="289" key="GridCell.Tab.0.center/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588202956245" />
+    <state width="1899" height="289" key="GridCell.Tab.0.left" timestamp="1588202956245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.left/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189132553" />
-    <state width="1899" height="289" key="GridCell.Tab.0.right" timestamp="1588189132553">
+    <state width="1899" height="289" key="GridCell.Tab.0.left/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588202956245" />
+    <state width="1899" height="289" key="GridCell.Tab.0.right" timestamp="1588202956245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.right/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189132553" />
+    <state width="1899" height="289" key="GridCell.Tab.0.right/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588202956245" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1588164060004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,10 +319,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.3.right/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588164060005" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1588179754434">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1588189245345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588179754434" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588189245345" />
     <state x="766" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1588179728708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

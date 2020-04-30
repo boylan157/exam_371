@@ -4,6 +4,9 @@ import { Link, withRouter } from "react-router-dom";
 /*
     Just provide a header component for all pages, where we have a link to the
     home-page, and login/signup/logout buttons.
+
+
+    Code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/src/client/headerbar.jsx
  */
 export class HeaderBar extends React.Component {
   constructor(props) {

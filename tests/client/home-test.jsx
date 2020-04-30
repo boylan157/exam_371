@@ -3,7 +3,7 @@ const { mount } = require('enzyme');
 import {BrowserRouter} from 'react-router-dom';
 const {Home} = require("../../src/client/home");
 
-
+// code extended from https://github.com/arcuri82/web_development_and_api_design/blob/master/exercise-solutions/quiz-game/part-10/tests/client/home-test.jsx
 
 const needToLogInMsg = "You need to log-in to get lootboxes!";
 
@@ -18,10 +18,9 @@ test("Test not logged in", async () => {
 
 test("Test logged in", async () => {
 
-    const victories = 42;
-    const defeats = 77;
 
-    const user = {id: "Foo", victories, defeats};
+
+    const user = {id: "Foo"};
     const fetchAndUpdateUserInfo = () => new Promise(resolve => resolve());
 
     const driver = mount(
